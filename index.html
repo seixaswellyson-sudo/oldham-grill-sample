@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="theme-color" content="#0C1A12" />
+    <meta
+      name="description"
+      content="A free, unofficial website concept for Oldham Grill, a Romanian grill restaurant on Ashton Road in Oldham. Not the official website."
+    />
+    <title>Oldham Grill · Romanian Grill Restaurant · Website Concept (Not Official)</title>
+
+    <!--
+      Deep links such as /privacy work on static hosts that fall back to
+      index.html (or 404.html). Because the build uses relative asset paths
+      (base './'), this snippet points relative URLs back at the app folder
+      when the browser lands on a known route one level deep.
+    -->
+    <script>
+      (function () {
+        try {
+          var path = window.location.pathname
+          var match = path.match(/^(.*)\/(privacy|terms)\/?$/)
+          if (match) {
+            var base = document.createElement('base')
+            base.href = (match[1] || '') + '/'
+            document.head.appendChild(base)
+          }
+        } catch (e) {}
+      })()
+    </script>
+
+    <link
+      rel="preload"
+      href="./assets/fonts/fraunces-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/manrope-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+    <script type="module" crossorigin src="./static/index-B0qU1gWj.js"></script>
+    <link rel="stylesheet" crossorigin href="./static/index-CjeqylPV.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
